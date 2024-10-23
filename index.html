@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.jpeg">
+  <link rel="stylesheet" type="text/css" href="css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&family=Onest:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="home" id="navbar">
+    <nav class="navbar w-75 mx-auto px-5 rounded-5 mt-5 navbar-expand-lg navbar-light bg-light text-capitalize d-flex justify-content-between">
+      <div class="d-flex justify-content-around w-100">
+        <a class="navbar-brand fs-5 fw-bold" href="index.html">Game Previews</a>
+        <button class="navbar-toggler" type="button" 
+          data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" 
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+      </div>
+
+      <div class="float-end text-start collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link fw-bold fs-5" data-category="mmorpg" href="#">mmorpg</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" data-category="shooter" href="#">shooter</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" data-category="sailing" href="#">sailing</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link fw-bold fs-5" data-category="permadeath" href="#">permadeath</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" data-category="superhero" href="#">superhero</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" data-category="pixel" href="#">pixel</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <div class="loader d-none position-fixed top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" id="loading-container">
+		<i class="fas fa-spinner fa-spin fa-5x"></i>
+	</div>
+
+
+  <section class="container mainFont" id="game-content">
+	<div id="game-container" class="g-4 mt-4 p-2  row d-flex justify-content-center align-item-center">
+	</div>
+  </section>
+
+  <section id="details" class="d-none p-2 ">
+    <div class="container">
+      <div class="d-flex justify-content-between pt-5">
+        <h2>Game Details</h2>
+        <i id="icon-close" class="fas fa-times fa-2x   px-2 py-1 cursor-pointer"></i>
+      </div>
+       <hr/>
+       <div id="details-box"></div>
+    </div>
+  </section>
+
+  <script src="js/jquery-3.7.1.min.js"></script> <!-- For Bootstrap 4 -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
